@@ -26,6 +26,7 @@ body {
 }
 
 header{
+    padding-top: .4%;
     padding-left: 1%;
     padding-right: 1%;
     height: 2.7%;
@@ -62,9 +63,7 @@ header{
     cursor: pointer;
 }
 
-.window-button:hover {
-    transform: scale(.95);
-}
+
 .window-button:nth-child(1){
     background-color: #E74C3C;
 }
@@ -97,6 +96,7 @@ header{
 }
 
 #folder-img {
+    margin-top: -.5%;
     width: 1.5em;
     margin-right: 1%;
     float: left;
@@ -110,37 +110,58 @@ header{
 /* fonts importing from /assets/fonts */
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/assets/fonts/Montserrat-Regular.woff') format('woff');
-}
-
-@font-face {
     font-family: 'Montserrat-Bold';
+    src: url('/assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: bold;
-    src: url('/assets/fonts/Montserrat-Bold.woff') format('woff');
+
 }
 
-@font-face {
-    font-family: 'Montserrat-Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/assets/fonts/Montserrat-Medium.woff') format('woff');
-}
+
+
 
 @font-face {
     font-family: 'Montserrat-Light';
-    font-style: normal;
+    src: url('/assets/fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
-    src: url('/assets/fonts/Montserrat-Light.woff') format('woff');
+    font-style: normal;
+
 }
+
+
+
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('/assets/fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 
 @font-face {
     font-family: 'Montserrat-Thin';
-    font-style: normal;
+    src: url('/assets/fonts/montserrat-thin-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-thin-webfont.woff') format('woff');
     font-weight: normal;
-    src: url('/assets/fonts/Montserrat-Thin.woff') format('woff');
-}
+    font-style: normal;
 
+}
