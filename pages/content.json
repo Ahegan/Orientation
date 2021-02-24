@@ -1,6 +1,6 @@
 {
     "Content": {
-        "Moi": "<h1> Moi </h1>",
+        "Moi": "<h1 class='main-title'>Qui suis-je ?</h1><div class='atributes'><span class='first-words'>Qualités</span> : <span class='atr-content'>déterminé, investi, curieux, à l'écoute,persévérant</span></div><div class='atributes'><span class='first-words'>Défauts</span> : <span class='atr-content'>réservé, minutieux, exigeant envers moi-même etenvers les autres</span></div><div class='atributes'><span class='first-words'>Ce que je déteste</span> : <span class='atr-content'> Le travail en l’absence de sens,analyser pour analyser. Apprendre sans savoir appliquer. </span></div><div class='atributes'><span class='first-words'>Mes difficultés</span> : <span class='atr-content'>Effectuer une tâche si je n’en comprendsou n’en voit un intérêt concret qu’il soit sur le long ou le court terme.</span></div><div class='atributes'><span class='first-words'>Compétences</span> : <span class='atr-content'>Compétences : Très bon niveau en math, physique, anglais, bonnes notions en développement (HTML, CSSqui ne sont pas des langages de programmation, JS, légères bases en Python), connaissances enmontage photo et vidéo</span></div><div class='atributes'><span class='first-words'>Ambition</span> : <span class='atr-content'>Créer et concrétiser mes propres idées etprojets , contribuer à des projets innovants</span></div>",
         "Formation": "<h1> La formation </h1>",
         "Why": "<h1> Pourquoi ce choix </h1>"
     }

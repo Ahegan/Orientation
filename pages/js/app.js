@@ -12,7 +12,7 @@ var response;
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         response = this.response.Content
-        //pageContent.innerHTML = response.Moi
+        pageContent.innerHTML = response.Moi
 
     }
 };

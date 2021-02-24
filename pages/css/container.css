@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: Montserrat-Medium, Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: #d5d5d7;
+    color: #c4c4c4;
 }
 
 body {
@@ -93,6 +93,7 @@ header {
     display: inline;
     font-size: 120%;
     cursor: default;
+    color: #d5d5d7;
 }
 
 #folder-img {
@@ -127,6 +128,7 @@ nav div {
     padding-left: 4%;
     border-radius: 4.5px;
     background: rgba(68, 69, 74, 0.315);
+    color: #d5d5d7;
     box-shadow : 0 0 .5px rgba(0, 0, 0, .733);
     transition: all .25s ease-in-out;
 }
@@ -155,7 +157,8 @@ nav div:nth-child(1){
 
 #content {
     position: absolute;
-    padding: 1%;
+    padding: 1.5%;
+    padding-bottom: 8%;
     width: 79.5%;
     height: 96%;
     top: 4%;
