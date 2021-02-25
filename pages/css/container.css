@@ -4,7 +4,11 @@
     padding: 0px;
     font-family: Montserrat-Medium, Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: #c4c4c4;
+    color: #d2d2d3;
+    line-height: 130%;
+    word-spacing: 3.5px;
+    letter-spacing: 1.2px;
+    user-select: none;
 }
 
 body {
@@ -157,7 +161,7 @@ nav div:nth-child(1){
 
 #content {
     position: absolute;
-    padding: 1.5%;
+    padding: 2%;
     padding-bottom: 8%;
     width: 79.5%;
     height: 96%;
@@ -224,19 +228,6 @@ nav div:nth-child(1){
 }
 
 /* Responsive */
-
-/* @media only screen and (max-height: 830px){
-    #main-container {
-        height: 75%;
-        width: 70%;
-    }
-}
-@media only screen and (max-height: 790px){
-    #main-container {
-        height: 85%;
-        width: 80%;
-    }
-} */
 
 @media only screen and (max-height: 604px){
     #main-container {

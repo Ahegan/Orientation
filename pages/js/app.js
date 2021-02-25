@@ -1,8 +1,8 @@
 const file = document.getElementsByClassName("files");
 
-const Moi = file[0];
-const Formation = file[1];
-const Why = file[2];
+const moi = file[0];
+const formation = file[1];
+const why = file[2];
 
 const pageContent = document.getElementById("content")
 
@@ -12,7 +12,7 @@ var response;
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         response = this.response.Content
-        pageContent.innerHTML = response.Moi
+        pageContent.innerHTML = response.moi
 
     }
 };
@@ -21,7 +21,7 @@ xhr.open("GET", "/pages/content.json", true);
 xhr.responseType = "json"
 xhr.send();
 
-var currentTopic = Moi
+var currentTopic = moi
 
 function topicChange(topicHTML, topicJSON) {
     //reset the style of the current topics
@@ -38,16 +38,16 @@ function topicChange(topicHTML, topicJSON) {
 
 }
 
-Moi.addEventListener("click", () => {
-    topicChange(Moi, "Moi")
+moi.addEventListener("click", () => {
+    topicChange(moi, "moi")
 });
 
-Formation.addEventListener("click", () => {
-    topicChange(Formation, "Formation")
+formation.addEventListener("click", () => {
+    topicChange(formation, "formation")
 });
 
-Why.addEventListener("click", () => {
-    topicChange(Why, "Why")
+why.addEventListener("click", () => {
+    topicChange(why, "why")
 });
 
 const plusButton = document.getElementsByClassName("window-button")[2];
@@ -58,7 +58,7 @@ var firstUse = true;
 plusButton.addEventListener("click", () => {
 
     //warn on the first use 
-    if (firstUse){
+    if (firstUse) {
         firstUse = false;
         alert("La fonctionnalité d'agrandissement de la fenêtre est expérimentale, en cas de problème d'affichage, rafraîchissez la page")
     }
@@ -75,3 +75,37 @@ plusButton.addEventListener("click", () => {
         document.getElementById("main-container").style.height = "85%"
     }
 })
+
+
+//scroll part
+function scrollFun(el, place) {
+    el = document.getElementById(el)
+    el.scrollIntoView({
+        block: place,
+        behavior: 'smooth',
+        inline: 'center'
+    });
+}
+
+//interval to wait the JSON request
+setInterval(() => {
+    document.getElementById("pool-link").addEventListener("click", () => {
+        scrollFun("pool", "center")
+    })
+
+    document.getElementById("toulouseIII-link").addEventListener("click", () => {
+        scrollFun("toulouseIII", "center")
+    })
+
+    document.getElementById("full-stack-link").addEventListener("click", () => {
+        scrollFun("full-stack", "end")
+    })
+
+    document.getElementById("pentester-link").addEventListener("click", () => {
+        scrollFun("pentester", "end")
+    })
+
+
+}, 3000);
+
+

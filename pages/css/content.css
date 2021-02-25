@@ -1,9 +1,120 @@
 .main-title {
-    margin-top: 17%;
-    margin-bottom: 17%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     text-align: center;
     font-size: 47px;
-    color: #d5d5d7;
+    color: #cecece;
+}
+
+.secondary-title {
+    position: relative;
+    display: inline-block;
+    margin: 3%;
+    font-size: 40px;
+    color: #f5f5f5;
+}
+
+.secondary-title::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 5%;
+    border-radius: .1em;
+    background-color: rgb(222, 222, 222);
+    transition: all .2s ease-in-out
+}
+
+.secondary-title:hover::after {
+    width: 100%;
+}
+
+.tertiary-title {
+    margin: 1.5%;
+    margin-top: 5%;
+    margin-left: 6%;
+    font-size: 27px;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+
+p {
+    font-family: Montserrat-Light;
+    font-size: 18px;
+    text-indent: 18%;
+}
+
+ol {
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+ul {
+    margin-left: 5%;
+    list-style-type: disc;
+}
+
+li {
+    padding: 2%;
+    padding-left: 0;
+    font-family: Montserrat-Light;
+    font-size: 18px;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    text-indent: 0;
+}
+
+.link::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 5%;
+    transform: scale(0, 1);
+    border-radius: .1em;
+    background-color: rgb(222, 222, 222);
+    transition: all .2s ease-in-out
+}
+
+.link:hover::after {
+    transform: scale(1, 1);
+}
+
+.pad {
+    padding: 1%;
+}
+
+.uped {
+    margin-top: -3em;
+    padding: 0;
+}
+
+em {
+    font-family: Montserrat-Light;
+}
+
+.comment {
+    padding: 1%;
+    text-indent: 0;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.comment:last-child {
+    margin-top: 7%;
+}
+
+.comment.link {
+    color: rgb(222, 222, 222);
+    font-size: 17.5px;
 }
 
 .atributes {
@@ -12,7 +123,27 @@
     padding: 1.2%;
 }
 
-span.first-words{
-    text-decoration: underline;
-    text-decoration-color: rgb(211, 211, 211);
+.atr-content {
+    font-family: Montserrat-Light;
+}
+
+span.first-words {
+    position: relative;
+}
+
+span.first-words::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: .03em;
+    border-radius: .1em;
+    background-color: rgb(235, 235, 235);
+    transition: all .2s ease-in-out
+}
+
+span.first-words:hover::after {
+    width: 100%;
 }
