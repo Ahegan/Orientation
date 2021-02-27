@@ -4,25 +4,25 @@ const moi = file[0];
 const formation = file[1];
 const why = file[2]; 
 
-const pageContent = document.getElementById("content")
+const pageContent = document.getElementById("content");
 
 var xhr = new XMLHttpRequest();
 var response;
 
 xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-        response = this.response.Content
-        pageContent.innerHTML = response.moi
+        response = this.response.Content;
+        pageContent.innerHTML = response.moi;
 
     }
 };
 
 xhr.open("GET", "/pages/content.json", true);
-xhr.responseType = "json" 
+xhr.responseType = "json";
 xhr.send();
 
 
-var currentTopic = moi
+var currentTopic = moi;
 
 function topicChange(topicHTML, topicJSON) {
     //reset the style of the current topics
@@ -68,19 +68,19 @@ plusButton.addEventListener("click", () => {
     //warn on the first use 
     if (firstUse) {
         firstUse = false;
-        alert("La fonctionnalité d'agrandissement de la fenêtre est expérimentale, en cas de problème d'affichage, rafraîchissez la page")
+        alert("La fonctionnalité d'agrandissement de la fenêtre est expérimentale, en cas de problème d'affichage, rafraîchissez la page");
     }
 
     //check if the window is already expanded
-    compteur++
-    const expanded = (compteur % 2) == 0 ? false : true
+    compteur++;
+    const expanded = (compteur % 2) == 0 ? false : true;
 
     if (expanded) {
-        document.getElementById("main-container").style.width = "100%"
-        document.getElementById("main-container").style.height = "100%"
+        document.getElementById("main-container").style.width = "100%";
+        document.getElementById("main-container").style.height = "100%";
     } else {
-        document.getElementById("main-container").style.width = "80%"
-        document.getElementById("main-container").style.height = "85%"
+        document.getElementById("main-container").style.width = "80%";
+        document.getElementById("main-container").style.height = "85%";
     }
 })
 
@@ -121,5 +121,3 @@ setInterval(() => {
 
 
 }, 3000);
-
-
