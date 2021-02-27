@@ -6,6 +6,37 @@
     color: #cecece;
 }
 
+.atributes {
+    position: relative;
+    font-size: 22px;
+    padding: 1.2%;
+}
+
+.atr-content {
+    font-family: Montserrat-Light;
+}
+
+span.first-words {
+    position: relative;
+}
+
+span.first-words::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: .03em;
+    border-radius: .1em;
+    background-color: rgb(235, 235, 235);
+    transition: all .2s ease-in-out
+}
+
+span.first-words:hover::after {
+    width: 100%;
+}
+
 .secondary-title {
     position: relative;
     display: inline-block;
@@ -43,7 +74,7 @@
 p {
     font-family: Montserrat-Light;
     font-size: 18px;
-    text-indent: 18%;
+    text-indent: 16%;
 }
 
 ol {
@@ -64,6 +95,8 @@ li {
 }
 
 .link {
+    font-family: Montserrat-Bold;
+    letter-spacing: 2px;
     position: relative;
     display: inline-block;
     font-style: normal;
@@ -77,7 +110,7 @@ li {
     left: 0;
     content: "";
     width: 100%;
-    height: 5%;
+    height: 6%;
     transform: scale(0, 1);
     border-radius: .1em;
     background-color: rgb(222, 222, 222);
@@ -104,8 +137,31 @@ em {
 .comment {
     padding: 1%;
     text-indent: 0;
-    font-size: 16px;
+    font-size: 100%;
     font-style: italic;
+    animation-duration: 3s;
+}
+
+@keyframes highlight-comment {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        color: #f5f5f5;
+        transform: scale(1.03, 1.1);
+    }
+    50% {
+        color: inherit;
+        transform: scale(1);
+    }
+    75% {
+        color: #f5f5f5;
+        transform: scale(1.03, 1.1);
+    }
+    100% {
+        color: inherit;
+        transform: scale(1);
+    }
 }
 
 .comment:last-child {
@@ -117,33 +173,19 @@ em {
     font-size: 17.5px;
 }
 
-.atributes {
-    position: relative;
-    font-size: 22px;
-    padding: 1.2%;
-}
-
-.atr-content {
+.quote{
+    padding: 3%;
+    font-style: italic;
+    text-align: center;
     font-family: Montserrat-Light;
 }
 
-span.first-words {
-    position: relative;
+.quote-ref{
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    text-align: right;
 }
 
-span.first-words::after {
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 0%;
-    height: .03em;
-    border-radius: .1em;
-    background-color: rgb(235, 235, 235);
-    transition: all .2s ease-in-out
-}
-
-span.first-words:hover::after {
-    width: 100%;
+.under{
+    text-decoration: underline;
 }

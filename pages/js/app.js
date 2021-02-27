@@ -2,7 +2,7 @@ const file = document.getElementsByClassName("files");
 
 const moi = file[0];
 const formation = file[1];
-const why = file[2];
+const why = file[2]; 
 
 const pageContent = document.getElementById("content")
 
@@ -18,8 +18,9 @@ xhr.onreadystatechange = function () {
 };
 
 xhr.open("GET", "/pages/content.json", true);
-xhr.responseType = "json"
+xhr.responseType = "json" 
 xhr.send();
+
 
 var currentTopic = moi
 
@@ -35,6 +36,13 @@ function topicChange(topicHTML, topicJSON) {
 
     //actualize the current topic
     currentTopic = topicHTML
+
+    //scroll up #content
+    document.getElementById("top").scrollIntoView({
+        block: "center",
+        behavior: 'instant',
+        inline: 'center'
+    });
 
 }
 
@@ -85,6 +93,12 @@ function scrollFun(el, place) {
         behavior: 'smooth',
         inline: 'center'
     });
+    setTimeout(() => {
+        el.style.animationName = "highlight-comment";
+        setTimeout(() => {
+            el.style.animationName = "";
+        }, 3000)
+    }, 250);
 }
 
 //interval to wait the JSON request
@@ -102,7 +116,7 @@ setInterval(() => {
     })
 
     document.getElementById("pentester-link").addEventListener("click", () => {
-        scrollFun("pentester", "end")
+        scrollFun("pentester", "center")
     })
 
 

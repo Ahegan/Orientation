@@ -40,7 +40,6 @@ header {
     border-top-left-radius: 4.5px;
     border-top-right-radius: 4.5px;
     box-shadow: 0 0 2px 0 rgb(0 0 0);
-    cursor: grab;
 }
 
 #m-left {
