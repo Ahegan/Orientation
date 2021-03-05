@@ -132,12 +132,11 @@ nav div {
     border-radius: 4.5px;
     background: rgba(68, 69, 74, 0.315);
     color: #d5d5d7;
-    box-shadow : 0 0 .5px rgba(0, 0, 0, .733);
     transition: all .25s ease-in-out;
 }
 
 nav div:hover{
-    box-shadow : 0 0 1.5px rgba(0, 0, 0, 0.733)
+    box-shadow : 0 0 4px 0 rgba(0, 0, 0, 0.384)
 }
 
 nav div::before {
