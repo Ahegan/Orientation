@@ -227,24 +227,38 @@ nav div:nth-child(1){
 
 /* Responsive */
 
-@media only screen and (max-height: 604px){
+@media only screen and (max-height: 651px){
     #main-container {
         height: 90%;
         width: 85%;
     }
 }
 
-@media only screen and (max-height: 570px){
+@media only screen and (max-height: 615px){
     #main-container {
         height: 95%;
         width: 90%;
     }
 }
 
-@media only screen and (max-height: 540px){
+@media only screen and (max-height: 583px){
     #main-container {
         height: 100%;
         width: 100%;
     }
 }
 
+@media only screen and (max-height: 554px){
+    .window-button{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 513px){
+    #window-title{
+        display: none;
+    }
+    #folder-img{
+        display: none;
+    }
+}
